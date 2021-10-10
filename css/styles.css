@@ -14,14 +14,14 @@ line height 1.2
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
+  background-color: var(--hero-color);
 }
 .list {
   list-style: none;
 }
 
 .logo .first-part {
-  color: #2196f3;
+  color: var(--accent-text-color);
 }
 .link {
   text-decoration: none;
@@ -34,6 +34,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+.site-nav .link.current {
+  color: var(--accent-text-color);
 }
 
 /*  Шапка страницы   */
@@ -51,11 +54,13 @@ body {
   color: #000000;
 }
 
-.site-nav {
+.text-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.site-nav {
   color: var(--header-color);
 }
 
@@ -65,10 +70,6 @@ body {
 }
 
 .contact-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: #757575;
 }
 
@@ -226,7 +227,8 @@ body {
 }
 
 .btn-portfolio:active,
-.btn-portfolio:hover {
+.btn-portfolio:hover,
+.btn-portfolio:focus {
   color: #ffffff;
   background-color: var(--accent-text-color);
 }
