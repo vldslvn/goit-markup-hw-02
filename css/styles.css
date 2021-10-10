@@ -192,7 +192,8 @@ body {
   font-style: inherit;
 }
 .contact-footer:hover,
-.contact-footer:active {
+.contact-footer:active,
+.contact-footer:focus {
   color: var(--accent-text-color);
 }
 /* Портфолио */
